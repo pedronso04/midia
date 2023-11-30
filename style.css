@@ -1,3 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Para remover barras de rolagem */
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Coloca o vídeo atrás dos outros elementos */
+}
+
+header {
+    background-color: rgb(35, 56, 14);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+main {
+    padding: 20px;
+    color: white; /* Garante que o texto seja visível no topo do vídeo */
+}
+
+.container {
+    display: grid;
+    grid-gap: 40px; /* Espaço de 40px entre as colunas */
+    justify-content: center;
+    height: 200vh;
+}
+
+.quadrado {
+    width: 700px;
+    height: 180px;
+    background-color: rgba(0, 0, 255, 0.5); /* Cor azul com 50% de opacidade */
+    margin: 40px; /* Espaço entre os quadrados */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadrado h2 {
+    text-align: center;
+}
+
+.aqui {
+    color: white;
+    text-decoration: underline;
+    margin-left: 5px;
+}
 @media screen and (max-width: 480px) {
     body {
         overflow: auto; /* Reabilitar a rolagem para telas menores */
@@ -39,12 +110,15 @@
 
     .quadrado h2 {
         font-size: 16px; /* Ajustar o tamanho da fonte */
+        text-align: center; /* Centralizar o texto */
     }
 
     .aqui {
-        margin-left: 0;
         display: block; /* Tornar o link "Cadastre-se" um elemento de bloco */
         text-align: center;
         margin-top: 5px;
+        text-decoration: underline;
+        color: white; /* Manter a cor branca do link */
     }
 }
+
