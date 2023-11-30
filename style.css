@@ -1,0 +1,50 @@
+@media screen and (max-width: 480px) {
+    body {
+        overflow: auto; /* Reabilitar a rolagem para telas menores */
+    }
+
+    video {
+        display: none; /* Ocultar o vídeo em telas menores */
+    }
+
+    header img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* 1 coluna de tamanho igual */
+        height: auto; /* Ajustar a altura do contêiner */
+    }
+
+    .quadrado {
+        width: 100%;
+        height: auto; /* Ajustar a altura do quadrado */
+        margin: 20px 0; /* Reduzir o espaço entre os quadrados */
+    }
+
+    .quadrado h2 {
+        font-size: 16px; /* Ajustar o tamanho da fonte */
+    }
+
+    .aqui {
+        margin-left: 0;
+        display: block; /* Tornar o link "Cadastre-se" um elemento de bloco */
+        text-align: center;
+        margin-top: 5px;
+    }
+}
